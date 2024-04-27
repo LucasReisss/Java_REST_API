@@ -21,7 +21,7 @@ services:
       - demo-network
   lab:
     container_name: lab_container
-    image: user/lab
+    image: luca00r/lab
     restart: always
     build: ./rest-person-with-spring-boot-and-java
     working_dir: /rest-person-with-spring-boot-and-java
