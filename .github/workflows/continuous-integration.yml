@@ -27,11 +27,11 @@ jobs:
         cache: maven
         
     - name: Build Application JAR
-      working-directory: ./Java_API_REST/rest-person-with-spring-boot-and-java 
+      working-directory: ./rest-person-with-spring-boot-and-java 
       run: mvn clean package
 
     - name: Docker Compose Build
-      working-directory: ./Java_API_REST
+      working-directory: ./
       run: docker compose build
 
     - name: Push to Docker Hub Container Registry
